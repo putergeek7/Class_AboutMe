@@ -38,8 +38,8 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Sjv-ew-s37">
-                                        <rect key="frame" x="0.0" y="59.333333333333336" width="130.33333333333334" height="20.333333333333336"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Sjv-ew-s37">
+                                        <rect key="frame" x="0.0" y="59.333333333333336" width="165.33333333333334" height="20.333333333333336"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imr-vs-YOb">
                                                 <rect key="frame" x="0.0" y="0.0" width="63.666666666666664" height="20.333333333333332"/>
@@ -48,7 +48,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rve-hF-q2P">
-                                                <rect key="frame" x="88.666666666666671" y="0.0" width="41.666666666666671" height="20.333333333333332"/>
+                                                <rect key="frame" x="123.66666666666667" y="0.0" width="41.666666666666671" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -57,11 +57,21 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zU1-S7-bDX">
+                                <rect key="frame" x="125" y="728" width="124" height="30"/>
+                                <state key="normal" title="Introduce Self"/>
+                                <connections>
+                                    <action selector="introduceSelfButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bVC-rD-mLX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BOh-x2-lLd" secondAttribute="trailing" constant="16" id="5hL-TB-xRw"/>
+                            <constraint firstItem="zU1-S7-bDX" firstAttribute="centerX" secondItem="BOh-x2-lLd" secondAttribute="centerX" id="FNN-Ua-Gkp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zU1-S7-bDX" secondAttribute="bottom" constant="20" id="HUY-fE-6bP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BOh-x2-lLd" secondAttribute="bottom" constant="638.33000000000004" id="RRx-Gc-yoR"/>
+                            <constraint firstItem="zU1-S7-bDX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="Z6y-oR-9qv"/>
                             <constraint firstItem="BOh-x2-lLd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="i4K-eN-AWo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BOh-x2-lLd" secondAttribute="bottom" constant="638.33000000000004" id="l6D-pt-eEj"/>
                             <constraint firstItem="BOh-x2-lLd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="rt2-Fg-Hcq"/>
